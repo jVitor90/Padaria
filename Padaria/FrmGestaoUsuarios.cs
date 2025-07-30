@@ -79,20 +79,40 @@ namespace Padaria
                 MessageBox.Show("O E-mail informado é invalido!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (TxtbEditarSenha.Text.Length < 7)
+            else if (TxtbEditarNome.Text.Length < 7)
             {
                 MessageBox.Show("O Nome informado é invalido!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (TxtbEditarSenha.Text.Length < 6)
+            else if (TxtbEditarSenha.Text.Length < 5)
             {
-                MessageBox.Show("O Nome informado é invalido!", "ERRO!",
+                MessageBox.Show("O Senha informado é invalido!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-
-                atualizarUsuarioDgv();
+                //Iniciar edicão no BD
+                this.usuario.NomeCompleto = TxtbEditarNome.Text;
+                this.usuario.Email = TxtbEditarEmail.Text;
+                this.usuario.Senha = TxtbEditarSenha.Text;
+                //Exucutar o .modificar()
+                if (this.usuario.Modificar())
+                {
+                    MessageBox.Show("Usuário editado com sucesso!", "Sucesso!",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    atualizarUsuarioDgv();
+                    //limpar os campos e desatualizar o Dgvs
+                    GrbApagar.Enabled = false;
+                    GrbEditar.Enabled = false;
+                    TxtbEditarEmail.Text = "";
+                    TxtbEditarNome.Text = "";
+                    TxtbEditarSenha.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Falha ao editar o usuário!", "ERRO!",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -141,6 +161,11 @@ namespace Padaria
             //Ativar GrbApagar
             GrbApagar.Enabled = true;
             LblApagar.Text = $"{this.usuario.Id} - {this.usuario.NomeCompleto}";
+        }
+
+        private void DgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     } 
 }
