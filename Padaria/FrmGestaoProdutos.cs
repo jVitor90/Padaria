@@ -25,12 +25,12 @@ namespace Padaria
         private void DgvProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int linhaSelecionada = DgvProdutos.SelectedCells[0].RowIndex;
-            // atribuir os dados da linha selecionada  no grbEditar
+            // Atribuir os dados da linha selecionada  no grbEditar
             this.produto.Id = (int)DgvProdutos.Rows[linhaSelecionada].Cells[0].Value;
             this.produto.nome = DgvProdutos.Rows[linhaSelecionada].Cells[1].Value.ToString();
             this.produto.preco = (double)DgvProdutos.Rows[linhaSelecionada].Cells[2].Value;
             this.produto.id_categoria = (int)DgvProdutos.Rows[linhaSelecionada].Cells[3].Value;
-            // atribuir os dados da linha selecionada no grbEditar
+
             TxtbEditarNomeProduto.Text = this.produto.nome;
             TxtbEditarPreco.Text = this.produto.preco.ToString();
             TxtbEditarCategoria.Text = this.produto.id_categoria.ToString();
@@ -68,13 +68,13 @@ namespace Padaria
              MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (apagar == DialogResult.Yes)
             {
-                //Puxar os dados da tabela usuario
+                //Puxar os dados da tabela produto
                 if (this.produto.RemoverProdutos())
                 {
                     MessageBox.Show("Produto removido com sucesso! ", "Sucesso!",
                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                     atualizarProdutosDgv();
-                    //Limpar os campos e desabilitar os grbs
+                    //Limpar os campos e desabilitar os grbs e os txtb
                     GrbEditarProduto.Enabled = false;
                     GrbApagarProduto.Enabled = false;
                     TxtbEditarNomeProduto.Clear();
@@ -132,7 +132,7 @@ namespace Padaria
             }
         }
 
-        private void BtnEditarEmail_Click(object sender, EventArgs e)
+        private void BtnEditarProduto_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(TxtbEditarNomeProduto.Text))
             {

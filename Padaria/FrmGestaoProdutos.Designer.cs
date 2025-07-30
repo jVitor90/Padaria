@@ -35,7 +35,7 @@
             this.TxtbEditarCategoria = new System.Windows.Forms.TextBox();
             this.LblEditarCategoria = new System.Windows.Forms.Label();
             this.LblPrecoProduto = new System.Windows.Forms.Label();
-            this.BtnEditarEmail = new System.Windows.Forms.Button();
+            this.BtnEditarProduto = new System.Windows.Forms.Button();
             this.LblNomeProduto = new System.Windows.Forms.Label();
             this.TxtbEditarNomeProduto = new System.Windows.Forms.TextBox();
             this.TxtbEditarPreco = new System.Windows.Forms.TextBox();
@@ -95,7 +95,7 @@
             this.GrbEditarProduto.Controls.Add(this.TxtbEditarCategoria);
             this.GrbEditarProduto.Controls.Add(this.LblEditarCategoria);
             this.GrbEditarProduto.Controls.Add(this.LblPrecoProduto);
-            this.GrbEditarProduto.Controls.Add(this.BtnEditarEmail);
+            this.GrbEditarProduto.Controls.Add(this.BtnEditarProduto);
             this.GrbEditarProduto.Controls.Add(this.LblNomeProduto);
             this.GrbEditarProduto.Controls.Add(this.TxtbEditarNomeProduto);
             this.GrbEditarProduto.Controls.Add(this.TxtbEditarPreco);
@@ -134,17 +134,17 @@
             this.LblPrecoProduto.TabIndex = 15;
             this.LblPrecoProduto.Text = "Preço do Produto";
             // 
-            // BtnEditarEmail
+            // BtnEditarProduto
             // 
-            this.BtnEditarEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BtnEditarEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditarEmail.Location = new System.Drawing.Point(10, 137);
-            this.BtnEditarEmail.Name = "BtnEditarEmail";
-            this.BtnEditarEmail.Size = new System.Drawing.Size(327, 32);
-            this.BtnEditarEmail.TabIndex = 14;
-            this.BtnEditarEmail.Text = "Editar";
-            this.BtnEditarEmail.UseVisualStyleBackColor = false;
-            this.BtnEditarEmail.Click += new System.EventHandler(this.BtnEditarEmail_Click);
+            this.BtnEditarProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnEditarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditarProduto.Location = new System.Drawing.Point(10, 137);
+            this.BtnEditarProduto.Name = "BtnEditarProduto";
+            this.BtnEditarProduto.Size = new System.Drawing.Size(327, 32);
+            this.BtnEditarProduto.TabIndex = 14;
+            this.BtnEditarProduto.Text = "Editar";
+            this.BtnEditarProduto.UseVisualStyleBackColor = false;
+            this.BtnEditarProduto.Click += new System.EventHandler(this.BtnEditarProduto_Click);
             // 
             // LblNomeProduto
             // 
@@ -299,7 +299,7 @@
         private System.Windows.Forms.Label LblApagar;
         private System.Windows.Forms.Button BtnApagar;
         private System.Windows.Forms.GroupBox GrbEditarProduto;
-        private System.Windows.Forms.Button BtnEditarEmail;
+        private System.Windows.Forms.Button BtnEditarProduto;
         private System.Windows.Forms.TextBox TxtbEditarNomeProduto;
         private System.Windows.Forms.TextBox TxtbEditarPreco;
         private System.Windows.Forms.GroupBox GrbCadastrarProduto;
