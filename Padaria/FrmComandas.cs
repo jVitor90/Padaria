@@ -14,10 +14,95 @@ namespace Padaria
     {
         //Variaveis globais 
         Model.Usuario usuario;
+        Model.Produto produto = new Model.Produto();
+        Model.OrdemComanda ordemComanda = new Model.OrdemComanda();
         public FrmComandas(Model.Usuario usuario)
         {
             InitializeComponent();
             this.usuario = usuario;
+            GrbLancamento.Enabled = false;
+            AtualizarDgv();
+        }
+        public void AtualizarDgv()
+        {
+            DgvComandas.DataSource = produto.ListarProduto();
+        }
+
+        private void DgvComandas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int linhaSelecionada = DgvComandas.SelectedCells[0].RowIndex;
+            //atribuir o id e nome do produto no txtb
+            string idProduto = DgvComandas.Rows[linhaSelecionada].Cells[0].Value.ToString();
+            string nomeProduto = DgvComandas.Rows[linhaSelecionada].Cells[1].Value.ToString();
+            TxtbProdutos.Text = $"{idProduto} - {nomeProduto}";
+
+        }
+
+        private void BtnContinuar_Click(object sender, EventArgs e)
+        {
+            //Verificar se os campos forma preenchidos:
+            if (TxtbComandas.Text == "")
+            {
+                MessageBox.Show("Informe o numero da comando", "ERRO!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                //habilitar o cmapo de lançamento
+                GrbLancamento.Enabled = true;
+                TxtbProdutos.Enabled = false;
+
+                //desativar o grbinformações
+                GrbInformações.Enabled = false;
+            }
+        }
+
+        private void BtnLancar_Click(object sender, EventArgs e)
+        {
+            //Verificar se os campos forma preenchidos:
+            if (TxtbComandas.Text == "")
+            {
+                MessageBox.Show("Informe a comanda!",
+                   "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (TxtbQuantidades.Text == "")
+            {
+                MessageBox.Show("Informe a quantidade de produtos!",
+                     "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult r = MessageBox.Show($"Tem certeza que deseja lançar {TxtbQuantidades.Text}" +
+                    $" de {TxtbProdutos.Text} na comanda {TxtbComandas.Text}");
+
+                if (r == DialogResult.Yes)
+                {
+                    ordemComanda.idResp = usuario.Id;
+                    ordemComanda.idProduto = int.Parse(TxtbProdutos.Text.Split('-')[0]);
+                    ordemComanda.idFicha = int.Parse(TxtbComandas.Text);
+                    ordemComanda.Quantidade = int.Parse(TxtbQuantidades.Text);
+                    ordemComanda.Situacao = 1;// Inserir 
+
+                    if (ordemComanda.Cadastrar_Comanda())
+                    {
+                        MessageBox.Show("Lançamento efetuado com sucesso", "Sucesso",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Falha no Lançamento", "ERRO",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                    //   else
+                    //  {
+
+                    //  }
+
+                }
+
+            }
         }
     }
 }
+

@@ -15,11 +15,21 @@ namespace Padaria
         //Variaveis globais 
         Model.Usuario usuario;
         Model.Produto produto = new Model.Produto();
+        Model.Categoria categoria = new Model.Categoria();
         public FrmGestaoProdutos(Model.Usuario usuario)
         {
             InitializeComponent();
             this.usuario = usuario;
             atualizarProdutosDgv();
+            //Obter as categorias do banco 
+            DataTable ResultadoCategoria = categoria.ListarCategoria();
+
+            foreach (DataRow linha in ResultadoCategoria.Rows)
+            {
+                //adicionar ao combobox
+                CbbCadastrarCategoria.Items.Add($"{linha["id"]} - {linha["nome"]}");
+                CbbEditarCategoria.Items.Add($"{linha["id"]} - {linha["nome"]}");
+            }
         }
 
         private void DgvProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -33,7 +43,7 @@ namespace Padaria
 
             TxtbEditarNomeProduto.Text = this.produto.nome;
             TxtbEditarPreco.Text = this.produto.preco.ToString();
-            TxtbEditarCategoria.Text = this.produto.id_categoria.ToString();
+          //  TxtbEditarCategoria.Text = this.produto.id_categoria.ToString();
             // Ativar o grbEditor
             GrbEditarProduto.Enabled = true;
             // Ativar o grvApagar
@@ -48,7 +58,8 @@ namespace Padaria
             if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true; // impede a digitação
-                MessageBox.Show("Não é permitido digitar números no nome.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Não é permitido digitar números no nome.", "Aviso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -58,7 +69,8 @@ namespace Padaria
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ',')
             {
                 e.Handled = true;
-                MessageBox.Show("Digite apenas números no campo de preço.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Digite apenas números no campo de preço.", "Aviso", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -83,7 +95,7 @@ namespace Padaria
                 }
                 else
                 {
-                    MessageBox.Show("Falha ao remover o produto! ", "Erro!",
+                    MessageBox.Show("Falha ao remover o produto! ", "ERRO!",
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -102,16 +114,18 @@ namespace Padaria
                 MessageBox.Show("O campo 'Preço' não pode estar vazio!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (string.IsNullOrWhiteSpace(TxtbCadastrarCategoria.Text))
+            else if (string.IsNullOrWhiteSpace(CbbCadastrarCategoria.Text))
             {
                 MessageBox.Show("O campo 'Categoria' não pode estar vazio!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
+
                 this.produto.nome = TxtbCadastrarNomeProduto.Text;
                 this.produto.preco = double.Parse(TxtbCadastrarPreco.Text);
-                this.produto.id_categoria = int.Parse(TxtbCadastrarCategoria.Text);
+                //Obter apenas o id da categoria do combobox    
+                this.produto.id_categoria = int.Parse(CbbCadastrarCategoria.Text.Split('-')[0]);
                 this.produto.id_respcadastro = usuario.Id;
 
                 if (produto.CadastrarProduto())
@@ -121,7 +135,7 @@ namespace Padaria
                     //Limpar os campos de cadastro 
                     TxtbCadastrarNomeProduto.Text = "";
                     TxtbCadastrarPreco.Text = "";
-                    TxtbCadastrarCategoria.Text = "";
+                   // TxtbCadastrarCategoria.Text = "";
                     atualizarProdutosDgv();
                 }
                 else
@@ -144,7 +158,7 @@ namespace Padaria
                 MessageBox.Show("O Preço informado é invalido!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (string.IsNullOrWhiteSpace(TxtbEditarCategoria.Text))
+            else if (string.IsNullOrWhiteSpace(CbbEditarCategoria.Text))
             {
                 MessageBox.Show("A categoria informada é invalida!", "ERRO!",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -154,7 +168,8 @@ namespace Padaria
                 //Iniciar edicão no BD
                 this.produto.nome = TxtbEditarNomeProduto.Text;
                 this.produto.preco = double.Parse(TxtbEditarPreco.Text);
-                this.produto.id_categoria = int.Parse(TxtbEditarCategoria.Text);
+                //Obter apenas o id da categoria do combobox    
+                this.produto.id_categoria = int.Parse(CbbEditarCategoria.Text.Split('-')[0]);
                 //Exucutar o .ModificarProduto()
                 if (this.produto.ModificarProdutos())
                 {
@@ -166,7 +181,7 @@ namespace Padaria
                     GrbEditarProduto.Enabled = false;
                     TxtbEditarPreco.Text = "";
                     TxtbEditarNomeProduto.Text = "";
-                    TxtbEditarCategoria.Text = "";
+                    CbbEditarCategoria.Text = "";
                 }
                 else
                 {
