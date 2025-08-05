@@ -38,6 +38,7 @@
             this.BtnContinuar = new System.Windows.Forms.Button();
             this.GrbInformações = new System.Windows.Forms.GroupBox();
             this.GrbLancamento = new System.Windows.Forms.GroupBox();
+            this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnLancar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvComandas)).BeginInit();
             this.GrbInformações.SuspendLayout();
@@ -122,6 +123,7 @@
             // 
             this.BtnContinuar.BackColor = System.Drawing.Color.Black;
             this.BtnContinuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnContinuar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnContinuar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BtnContinuar.Location = new System.Drawing.Point(17, 104);
             this.BtnContinuar.Name = "BtnContinuar";
@@ -145,6 +147,7 @@
             // 
             // GrbLancamento
             // 
+            this.GrbLancamento.Controls.Add(this.BtnCancelar);
             this.GrbLancamento.Controls.Add(this.BtnLancar);
             this.GrbLancamento.Controls.Add(this.LblQuantidade);
             this.GrbLancamento.Controls.Add(this.LblProduto);
@@ -157,14 +160,29 @@
             this.GrbLancamento.TabStop = false;
             this.GrbLancamento.Text = "Lançamentos";
             // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.Black;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnCancelar.Location = new System.Drawing.Point(206, 194);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(144, 37);
+            this.BtnCancelar.TabIndex = 9;
+            this.BtnCancelar.Text = "Cancelar ";
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
             // BtnLancar
             // 
             this.BtnLancar.BackColor = System.Drawing.Color.Black;
             this.BtnLancar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLancar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLancar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BtnLancar.Location = new System.Drawing.Point(17, 194);
             this.BtnLancar.Name = "BtnLancar";
-            this.BtnLancar.Size = new System.Drawing.Size(340, 37);
+            this.BtnLancar.Size = new System.Drawing.Size(144, 37);
             this.BtnLancar.TabIndex = 8;
             this.BtnLancar.Text = "Lançar";
             this.BtnLancar.UseVisualStyleBackColor = false;
@@ -204,5 +222,6 @@
         private System.Windows.Forms.GroupBox GrbInformações;
         private System.Windows.Forms.GroupBox GrbLancamento;
         private System.Windows.Forms.Button BtnLancar;
+        private System.Windows.Forms.Button BtnCancelar;
     }
 }

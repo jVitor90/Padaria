@@ -32,6 +32,7 @@
             this.LblApagar = new System.Windows.Forms.Label();
             this.BtnApagar = new System.Windows.Forms.Button();
             this.GrbEditarProduto = new System.Windows.Forms.GroupBox();
+            this.CbbEditarCategoria = new System.Windows.Forms.ComboBox();
             this.LblEditarCategoria = new System.Windows.Forms.Label();
             this.LblPrecoProduto = new System.Windows.Forms.Label();
             this.BtnEditarProduto = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.TxtbEditarNomeProduto = new System.Windows.Forms.TextBox();
             this.TxtbEditarPreco = new System.Windows.Forms.TextBox();
             this.GrbCadastrarProduto = new System.Windows.Forms.GroupBox();
+            this.CbbCadastrarCategoria = new System.Windows.Forms.ComboBox();
             this.LblCadastrarCategoria = new System.Windows.Forms.Label();
             this.BtnCadastrarProdutos = new System.Windows.Forms.Button();
             this.TxtbCadastrarPreco = new System.Windows.Forms.TextBox();
@@ -46,8 +48,6 @@
             this.LblCadastrarPreco = new System.Windows.Forms.Label();
             this.LblCadastrarProdutos = new System.Windows.Forms.Label();
             this.DgvProdutos = new System.Windows.Forms.DataGridView();
-            this.CbbCadastrarCategoria = new System.Windows.Forms.ComboBox();
-            this.CbbEditarCategoria = new System.Windows.Forms.ComboBox();
             this.GrbApagarProduto.SuspendLayout();
             this.GrbEditarProduto.SuspendLayout();
             this.GrbCadastrarProduto.SuspendLayout();
@@ -79,8 +79,9 @@
             // 
             // BtnApagar
             // 
-            this.BtnApagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnApagar.BackColor = System.Drawing.Color.Black;
             this.BtnApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnApagar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnApagar.Location = new System.Drawing.Point(23, 70);
             this.BtnApagar.Name = "BtnApagar";
             this.BtnApagar.Size = new System.Drawing.Size(301, 30);
@@ -107,6 +108,16 @@
             this.GrbEditarProduto.TabStop = false;
             this.GrbEditarProduto.Text = "Editar";
             // 
+            // CbbEditarCategoria
+            // 
+            this.CbbEditarCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbEditarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CbbEditarCategoria.FormattingEnabled = true;
+            this.CbbEditarCategoria.Location = new System.Drawing.Point(164, 101);
+            this.CbbEditarCategoria.Name = "CbbEditarCategoria";
+            this.CbbEditarCategoria.Size = new System.Drawing.Size(173, 21);
+            this.CbbEditarCategoria.TabIndex = 19;
+            // 
             // LblEditarCategoria
             // 
             this.LblEditarCategoria.AutoSize = true;
@@ -129,8 +140,9 @@
             // 
             // BtnEditarProduto
             // 
-            this.BtnEditarProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnEditarProduto.BackColor = System.Drawing.Color.Black;
             this.BtnEditarProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditarProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BtnEditarProduto.Location = new System.Drawing.Point(10, 137);
             this.BtnEditarProduto.Name = "BtnEditarProduto";
             this.BtnEditarProduto.Size = new System.Drawing.Size(327, 32);
@@ -180,6 +192,16 @@
             this.GrbCadastrarProduto.TabStop = false;
             this.GrbCadastrarProduto.Text = "Cadastrar";
             // 
+            // CbbCadastrarCategoria
+            // 
+            this.CbbCadastrarCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbbCadastrarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CbbCadastrarCategoria.FormattingEnabled = true;
+            this.CbbCadastrarCategoria.Location = new System.Drawing.Point(164, 105);
+            this.CbbCadastrarCategoria.Name = "CbbCadastrarCategoria";
+            this.CbbCadastrarCategoria.Size = new System.Drawing.Size(173, 21);
+            this.CbbCadastrarCategoria.TabIndex = 18;
+            // 
             // LblCadastrarCategoria
             // 
             this.LblCadastrarCategoria.AutoSize = true;
@@ -192,8 +214,9 @@
             // 
             // BtnCadastrarProdutos
             // 
-            this.BtnCadastrarProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BtnCadastrarProdutos.BackColor = System.Drawing.Color.Black;
             this.BtnCadastrarProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCadastrarProdutos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BtnCadastrarProdutos.Location = new System.Drawing.Point(15, 143);
             this.BtnCadastrarProdutos.Name = "BtnCadastrarProdutos";
             this.BtnCadastrarProdutos.Size = new System.Drawing.Size(321, 32);
@@ -254,26 +277,6 @@
             this.DgvProdutos.Size = new System.Drawing.Size(478, 514);
             this.DgvProdutos.TabIndex = 6;
             this.DgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProdutos_CellClick);
-            // 
-            // CbbCadastrarCategoria
-            // 
-            this.CbbCadastrarCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CbbCadastrarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CbbCadastrarCategoria.FormattingEnabled = true;
-            this.CbbCadastrarCategoria.Location = new System.Drawing.Point(164, 105);
-            this.CbbCadastrarCategoria.Name = "CbbCadastrarCategoria";
-            this.CbbCadastrarCategoria.Size = new System.Drawing.Size(173, 21);
-            this.CbbCadastrarCategoria.TabIndex = 18;
-            // 
-            // CbbEditarCategoria
-            // 
-            this.CbbEditarCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CbbEditarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CbbEditarCategoria.FormattingEnabled = true;
-            this.CbbEditarCategoria.Location = new System.Drawing.Point(164, 101);
-            this.CbbEditarCategoria.Name = "CbbEditarCategoria";
-            this.CbbEditarCategoria.Size = new System.Drawing.Size(173, 21);
-            this.CbbEditarCategoria.TabIndex = 19;
             // 
             // FrmGestaoProdutos
             // 

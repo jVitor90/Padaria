@@ -63,6 +63,16 @@ namespace Padaria.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_right {
+            get {
+                object obj = ResourceManager.GetObject("arrow-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baker {
             get {
                 object obj = ResourceManager.GetObject("baker", resourceCulture);
@@ -76,6 +86,16 @@ namespace Padaria.Properties {
         internal static System.Drawing.Bitmap bread {
             get {
                 object obj = ResourceManager.GetObject("bread", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

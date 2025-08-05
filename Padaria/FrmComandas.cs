@@ -23,6 +23,18 @@ namespace Padaria
             GrbLancamento.Enabled = false;
             AtualizarDgv();
         }
+        public void ResetarCampos()
+        { 
+            GrbInformações.Enabled = true;
+            GrbLancamento.Enabled = false;
+           
+            
+            
+            //Limpar os campos 
+            TxtbComandas.Text = "";
+            TxtbProdutos.Text = "";
+            TxtbQuantidades.Text = "";
+        }
         public void AtualizarDgv()
         {
             DgvComandas.DataSource = produto.ListarProduto();
@@ -72,8 +84,14 @@ namespace Padaria
             }
             else
             {
-                DialogResult r = MessageBox.Show($"Tem certeza que deseja lançar {TxtbQuantidades.Text}" +
-                    $" de {TxtbProdutos.Text} na comanda {TxtbComandas.Text}");
+                string produto = TxtbProdutos.Text;
+                string nomeProduto = produto.Split('-').Length > 2
+                                     ? produto.Split('-')[1] + "-" + produto.Split('-')[2]
+                                     : produto.Split('-')[1]; // fallback: usa o texto completo se o split falhar
+
+                DialogResult r = MessageBox.Show( $"Tem certeza que deseja lançar {TxtbQuantidades.Text} " +
+                    $"unidades de{nomeProduto} na comanda {TxtbComandas.Text}?", "Atenção!", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (r == DialogResult.Yes)
                 {
@@ -87,21 +105,28 @@ namespace Padaria
                     {
                         MessageBox.Show("Lançamento efetuado com sucesso", "Sucesso",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ResetarCampos();
                     }
                     else
                     {
-                        MessageBox.Show("Falha no Lançamento", "ERRO",
+                        MessageBox.Show("Falha no Lançamento", "ERRO!",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
-                    //   else
-                    //  {
-
-                    //  }
-
+                }
+                else
+                {
+                    ResetarCampos();
                 }
 
             }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            ResetarCampos();
+
+            
         }
     }
 }

@@ -23,10 +23,30 @@ namespace Padaria.Model
         public DateTime DataAdic { get; set; }
         public int Situacao { get; set; }
 
+
+        public DataTable BuscarFicha()
+        {
+            //Select id_nome_completo,email
+            string comando = "SELECT * FROM view_fichas WHERE Ficha = @idFicha";
+
+            Banco conexaoBD = new Banco();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+                
+            cmd.Parameters.AddWithValue("@idFicha", idFicha);
+            cmd.Prepare();
+            // Declarar tabela que irá receber o resultado:
+            DataTable tabela = new DataTable();
+            // Preencher a tabela com o resultado da consulta
+            tabela.Load(cmd.ExecuteReader());
+            conexaoBD.Desconectar(con);
+            return tabela;
+        }
+
         public DataTable listar()
         {
             //Select id_nome_completo,email
-            string comando = "SELECT id,nome FROM categorias";
+            string comando = "SELECT * FROM view_fichas";
 
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
@@ -43,7 +63,38 @@ namespace Padaria.Model
         {
             string comando = "INSERT INTO ordens_comandas(`id_ficha`, `id_produto`," +
                 " `quantidade`, `id_resp`, `situacao`) VALUES " +
-                 "VALUES (@id, @id_ficha, @id_produto, @quantidade, @id_resp, @situacao)";
+                 "(@id_ficha, @id_produto, @quantidade, @id_resp, @situacao)";
+            Banco conexaoBD = new Banco();
+            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Parameters.AddWithValue("@id_ficha", idFicha);
+            cmd.Parameters.AddWithValue("@id_produto", idProduto);
+            cmd.Parameters.AddWithValue("@quantidade", Quantidade);
+            cmd.Parameters.AddWithValue("@id_resp", idResp);
+            cmd.Parameters.AddWithValue("@situacao", Situacao);
+
+            try
+            {
+                if (cmd.ExecuteNonQuery() == 0)
+                {
+                    conexaoBD.Desconectar(con);
+                    return false;
+                }
+                else
+                {
+                    conexaoBD.Desconectar(con);
+                    return true;
+                }
+            }
+            catch
+            {
+                conexaoBD.Desconectar(con);
+                return false;
+            }
+        }
+        public bool Encerrar()
+        {
+            string comando = "UPDATE ordens_comandas SET Situacao = 0 WHERE id_ficha = @id_ficha AND Situacao = 1";
             Banco conexaoBD = new Banco();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);

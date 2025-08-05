@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +19,8 @@
       "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\model\\ordemcomanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\model\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\model\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmgestaoprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmgestaoprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmgestaoprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmgestaoprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,73 +30,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmComandas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
-              "RelativeDocumentMoniker": "Padaria\\FrmComandas.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs [Design]",
-              "RelativeToolTip": "Padaria\\FrmComandas.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FrmCaixa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs",
+              "RelativeDocumentMoniker": "Padaria\\FrmCaixa.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs [Design]",
+              "RelativeToolTip": "Padaria\\FrmCaixa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:44:14.913Z",
+              "WhenOpened": "2025-08-05T17:53:00.081Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmComandas.cs",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
-              "RelativeDocumentMoniker": "Padaria\\FrmComandas.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
-              "RelativeToolTip": "Padaria\\FrmComandas.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAjwF0AAAA7AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "FrmCaixa.cs",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs",
+              "RelativeDocumentMoniker": "Padaria\\FrmCaixa.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs",
+              "RelativeToolTip": "Padaria\\FrmCaixa.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAADwv1cAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T18:10:05.347Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrdemComanda.cs",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\OrdemComanda.cs",
-              "RelativeDocumentMoniker": "Padaria\\Model\\OrdemComanda.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\OrdemComanda.cs",
-              "RelativeToolTip": "Padaria\\Model\\OrdemComanda.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAEwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:41:42.614Z",
+              "WhenOpened": "2025-08-05T18:08:19.42Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\Usuario.cs",
-              "RelativeDocumentMoniker": "Padaria\\Model\\Usuario.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\Usuario.cs",
-              "RelativeToolTip": "Padaria\\Model\\Usuario.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAmwEgAAAAJAAAAAAAAAA==",
+              "Title": "OrdemComanda.cs",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\OrdemComanda.cs",
+              "RelativeDocumentMoniker": "Padaria\\Model\\OrdemComanda.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\OrdemComanda.cs",
+              "RelativeToolTip": "Padaria\\Model\\OrdemComanda.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAwGAAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T19:37:22.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\Categoria.cs",
-              "RelativeDocumentMoniker": "Padaria\\Model\\Categoria.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\Categoria.cs",
-              "RelativeToolTip": "Padaria\\Model\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T19:36:02.646Z",
+              "WhenOpened": "2025-08-05T18:20:30.991Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -113,27 +79,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmGestaoProdutos.cs",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmGestaoProdutos.cs",
-              "RelativeDocumentMoniker": "Padaria\\FrmGestaoProdutos.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmGestaoProdutos.cs",
-              "RelativeToolTip": "Padaria\\FrmGestaoProdutos.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAiwLMAAAATAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmComandas.cs",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
+              "RelativeDocumentMoniker": "Padaria\\FrmComandas.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
+              "RelativeToolTip": "Padaria\\FrmComandas.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T18:07:16.307Z",
+              "WhenOpened": "2025-08-05T19:51:56.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmGestaoProdutos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmGestaoProdutos.cs",
-              "RelativeDocumentMoniker": "Padaria\\FrmGestaoProdutos.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmGestaoProdutos.cs [Design]",
-              "RelativeToolTip": "Padaria\\FrmGestaoProdutos.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "FrmComandas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
+              "RelativeDocumentMoniker": "Padaria\\FrmComandas.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs [Design]",
+              "RelativeToolTip": "Padaria\\FrmComandas.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T18:07:13.304Z",
+              "WhenOpened": "2025-08-05T19:51:54.212Z",
               "EditorCaption": " [Design]"
             }
           ]

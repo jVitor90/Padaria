@@ -34,3 +34,4 @@ C:\Users\joao.vfoliveira26\source\repos\Padaria\Padaria\obj\Debug\Padaria.pdb
 C:\Users\joao.vfoliveira26\source\repos\Padaria\Padaria\obj\Debug\Padaria.FrmGestaoUsuarios.resources
 C:\Users\joao.vfoliveira26\source\repos\Padaria\Padaria\obj\Debug\Padaria.FrmGestaoProdutos.resources
 C:\Users\joao.vfoliveira26\source\repos\Padaria\Padaria\obj\Debug\Padaria.FrmComandas.resources
+C:\Users\joao.vfoliveira26\source\repos\Padaria\Padaria\obj\Debug\Padaria.FrmCaixa.resources
