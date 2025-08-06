@@ -36,10 +36,10 @@
             this.LblTotal = new System.Windows.Forms.Label();
             this.BtnEncerrarComanda = new System.Windows.Forms.Button();
             this.LblPreco = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PicbLogo = new System.Windows.Forms.PictureBox();
             this.BtnListar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaComandas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // DgvListaComandas
@@ -123,15 +123,15 @@
             this.LblPreco.TabIndex = 14;
             this.LblPreco.Text = "R$";
             // 
-            // pictureBox1
+            // PicbLogo
             // 
-            this.pictureBox1.Image = global::Padaria.Properties.Resources.shopping_cart;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 301);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 109);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.PicbLogo.Image = global::Padaria.Properties.Resources.shopping_cart;
+            this.PicbLogo.Location = new System.Drawing.Point(77, 301);
+            this.PicbLogo.Name = "PicbLogo";
+            this.PicbLogo.Size = new System.Drawing.Size(169, 109);
+            this.PicbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicbLogo.TabIndex = 15;
+            this.PicbLogo.TabStop = false;
             // 
             // BtnListar
             // 
@@ -154,7 +154,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(611, 437);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PicbLogo);
             this.Controls.Add(this.LblPreco);
             this.Controls.Add(this.BtnEncerrarComanda);
             this.Controls.Add(this.LblTotal);
@@ -168,7 +168,7 @@
             this.Name = "FrmCaixa";
             this.Text = "FrmCaixa";
             ((System.ComponentModel.ISupportInitialize)(this.DgvListaComandas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,6 +184,6 @@
         private System.Windows.Forms.Label LblTotal;
         private System.Windows.Forms.Button BtnEncerrarComanda;
         private System.Windows.Forms.Label LblPreco;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PicbLogo;
     }
 }
