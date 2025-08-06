@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestaoProdutos));
             this.GrbApagarProduto = new System.Windows.Forms.GroupBox();
             this.LblApagar = new System.Windows.Forms.Label();
             this.BtnApagar = new System.Windows.Forms.Button();
@@ -288,6 +289,7 @@
             this.Controls.Add(this.GrbApagarProduto);
             this.Controls.Add(this.GrbEditarProduto);
             this.Controls.Add(this.GrbCadastrarProduto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmGestaoProdutos";
             this.Text = "FrmGestaoProdutos";
             this.GrbApagarProduto.ResumeLayout(false);

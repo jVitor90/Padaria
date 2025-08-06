@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\model\\ordemcomanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\padaria\\model\\ordemcomanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\model\\ordemcomanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\frmcaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|c:\\users\\joao.vfoliveira26\\source\\repos\\padaria\\padaria\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90E3FE8E-70A4-4BC0-A6CA-42B12BBAFAA0}|Padaria\\Padaria.csproj|solutionrelative:padaria\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FrmCaixa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs",
               "RelativeDocumentMoniker": "Padaria\\FrmCaixa.cs",
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FrmCaixa.cs",
               "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs",
               "RelativeDocumentMoniker": "Padaria\\FrmCaixa.cs",
               "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmCaixa.cs",
               "RelativeToolTip": "Padaria\\FrmCaixa.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAADwv1cAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T18:08:19.42Z",
               "IsPinned": true,
@@ -67,7 +67,7 @@
               "RelativeDocumentMoniker": "Padaria\\Model\\OrdemComanda.cs",
               "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\Model\\OrdemComanda.cs",
               "RelativeToolTip": "Padaria\\Model\\OrdemComanda.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAwGAAAABzAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wGAAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-05T18:20:30.991Z",
               "IsPinned": true,
@@ -79,27 +79,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmComandas.cs",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
-              "RelativeDocumentMoniker": "Padaria\\FrmComandas.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
-              "RelativeToolTip": "Padaria\\FrmComandas.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "FormMenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FormMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Padaria\\FormMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FormMenuPrincipal.cs",
+              "RelativeToolTip": "Padaria\\FormMenuPrincipal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T19:51:56.631Z",
+              "WhenOpened": "2025-08-06T16:54:06.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmComandas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs",
-              "RelativeDocumentMoniker": "Padaria\\FrmComandas.cs",
-              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FrmComandas.cs [Design]",
-              "RelativeToolTip": "Padaria\\FrmComandas.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FormMenuPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FormMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Padaria\\FormMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\joao.vfoliveira26\\source\\repos\\Padaria\\Padaria\\FormMenuPrincipal.cs [Design]",
+              "RelativeToolTip": "Padaria\\FormMenuPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T19:51:54.212Z",
+              "WhenOpened": "2025-08-06T16:54:04.186Z",
               "EditorCaption": " [Design]"
             }
           ]

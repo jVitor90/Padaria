@@ -19,6 +19,14 @@ namespace Padaria
             InitializeComponent();
             this.usuario = usuario;
             lblUsuarios.Text = $"Você está logado com: {usuario.NomeCompleto}";
+
+            //Ocultar os butões de usuários e produtos
+            if (usuario.Id != 1)
+            {
+                BtnUsuarios.Enabled = false;
+                BtnProdutos.Enabled = false;
+                
+            }
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)

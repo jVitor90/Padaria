@@ -20,6 +20,7 @@ namespace Padaria
         {
             InitializeComponent();
             this.usuario = usuario;
+
         }
 
         public void AtualizarDgv()

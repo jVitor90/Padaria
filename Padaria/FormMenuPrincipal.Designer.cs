@@ -29,59 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuPrincipal));
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnCaixa = new System.Windows.Forms.Button();
-            this.btnComandas = new System.Windows.Forms.Button();
-            this.btnProdutos = new System.Windows.Forms.Button();
+            this.BtnUsuarios = new System.Windows.Forms.Button();
+            this.BtnCaixa = new System.Windows.Forms.Button();
+            this.BtnComandas = new System.Windows.Forms.Button();
+            this.BtnProdutos = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.PicLogo2 = new System.Windows.Forms.PictureBox();
             this.lblUsuarios = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnUsuarios
+            // BtnUsuarios
             // 
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Location = new System.Drawing.Point(271, 256);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(396, 50);
-            this.btnUsuarios.TabIndex = 10;
-            this.btnUsuarios.Text = "Gestão de Usuários";
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            this.BtnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuarios.Location = new System.Drawing.Point(271, 256);
+            this.BtnUsuarios.Name = "BtnUsuarios";
+            this.BtnUsuarios.Size = new System.Drawing.Size(396, 50);
+            this.BtnUsuarios.TabIndex = 10;
+            this.BtnUsuarios.Text = "Gestão de Usuários";
+            this.BtnUsuarios.UseVisualStyleBackColor = true;
+            this.BtnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // btnCaixa
+            // BtnCaixa
             // 
-            this.btnCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaixa.Location = new System.Drawing.Point(271, 200);
-            this.btnCaixa.Name = "btnCaixa";
-            this.btnCaixa.Size = new System.Drawing.Size(396, 50);
-            this.btnCaixa.TabIndex = 9;
-            this.btnCaixa.Text = "Caixa";
-            this.btnCaixa.UseVisualStyleBackColor = true;
-            this.btnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
+            this.BtnCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCaixa.Location = new System.Drawing.Point(271, 200);
+            this.BtnCaixa.Name = "BtnCaixa";
+            this.BtnCaixa.Size = new System.Drawing.Size(396, 50);
+            this.BtnCaixa.TabIndex = 9;
+            this.BtnCaixa.Text = "Caixa";
+            this.BtnCaixa.UseVisualStyleBackColor = true;
+            this.BtnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
             // 
-            // btnComandas
+            // BtnComandas
             // 
-            this.btnComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComandas.Location = new System.Drawing.Point(271, 144);
-            this.btnComandas.Name = "btnComandas";
-            this.btnComandas.Size = new System.Drawing.Size(396, 50);
-            this.btnComandas.TabIndex = 8;
-            this.btnComandas.Text = "Lançamento de Comandas";
-            this.btnComandas.UseVisualStyleBackColor = true;
-            this.btnComandas.Click += new System.EventHandler(this.btnComandas_Click);
+            this.BtnComandas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComandas.Location = new System.Drawing.Point(271, 144);
+            this.BtnComandas.Name = "BtnComandas";
+            this.BtnComandas.Size = new System.Drawing.Size(396, 50);
+            this.BtnComandas.TabIndex = 8;
+            this.BtnComandas.Text = "Lançamento de Comandas";
+            this.BtnComandas.UseVisualStyleBackColor = true;
+            this.BtnComandas.Click += new System.EventHandler(this.btnComandas_Click);
             // 
-            // btnProdutos
+            // BtnProdutos
             // 
-            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProdutos.Location = new System.Drawing.Point(271, 88);
-            this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.Size = new System.Drawing.Size(396, 50);
-            this.btnProdutos.TabIndex = 7;
-            this.btnProdutos.Text = "Gestão de Produtos";
-            this.btnProdutos.UseVisualStyleBackColor = true;
-            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
+            this.BtnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnProdutos.Location = new System.Drawing.Point(271, 88);
+            this.BtnProdutos.Name = "BtnProdutos";
+            this.BtnProdutos.Size = new System.Drawing.Size(396, 50);
+            this.BtnProdutos.TabIndex = 7;
+            this.BtnProdutos.Text = "Gestão de Produtos";
+            this.BtnProdutos.UseVisualStyleBackColor = true;
+            this.BtnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // lblMenu
             // 
@@ -118,13 +118,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(690, 387);
             this.Controls.Add(this.lblUsuarios);
             this.Controls.Add(this.PicLogo2);
-            this.Controls.Add(this.btnUsuarios);
-            this.Controls.Add(this.btnCaixa);
-            this.Controls.Add(this.btnComandas);
-            this.Controls.Add(this.btnProdutos);
+            this.Controls.Add(this.BtnUsuarios);
+            this.Controls.Add(this.BtnCaixa);
+            this.Controls.Add(this.BtnComandas);
+            this.Controls.Add(this.BtnProdutos);
             this.Controls.Add(this.lblMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenuPrincipal";
@@ -137,10 +138,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Button btnCaixa;
-        private System.Windows.Forms.Button btnComandas;
-        private System.Windows.Forms.Button btnProdutos;
+        private System.Windows.Forms.Button BtnUsuarios;
+        private System.Windows.Forms.Button BtnCaixa;
+        private System.Windows.Forms.Button BtnComandas;
+        private System.Windows.Forms.Button BtnProdutos;
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.PictureBox PicLogo2;
         private System.Windows.Forms.Label lblUsuarios;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmComandas));
             this.DgvComandas = new System.Windows.Forms.DataGridView();
             this.TxtbComandas = new System.Windows.Forms.TextBox();
             this.LblComanda = new System.Windows.Forms.Label();
@@ -198,6 +199,7 @@
             this.Controls.Add(this.GrbInformações);
             this.Controls.Add(this.DgvComandas);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmComandas";
             this.Text = "FrmComandas";
             ((System.ComponentModel.ISupportInitialize)(this.DgvComandas)).EndInit();
